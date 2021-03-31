@@ -13,7 +13,7 @@ const { Meta } = Card
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="IZUZU RODEO | @izzrodeo" />
+    <SEO title='@izzrodeo' />
     <Card
       title={<span></span>}
       hoverable

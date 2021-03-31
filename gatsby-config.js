@@ -4,7 +4,7 @@ module.exports = {
     description: `A Variety Stream of content from the IZUZU RODEO Community`,
     author: `@izzrodeo`,
     image: "/images/izzrodeo.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@vca_iii",
+    twitterUsername: "@izzrodeo",
     url: `https://izzrodeo.com`,
   },
   plugins: [

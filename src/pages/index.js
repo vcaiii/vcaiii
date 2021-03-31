@@ -13,7 +13,7 @@ const { Meta } = Card
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Lord Vz | @vcaiii" />
+    <SEO title="IZUZU RODEO | @izzrodeo" />
     <Card
       title={<span></span>}
       hoverable
@@ -27,16 +27,15 @@ const IndexPage = () => (
     >
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <div>
-          <Meta style={{ textAlign: 'center' }} title="Lord Vz" description="Artist, Creator, Web Dev, Smart Ass, Gamer, Gluten Free, Solarpunk" />
+          <Meta style={{ textAlign: 'center' }} title="IZUZU RODEO" description="A Variety Stream of content from the IZUZU RODEO Community" />
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          {socialLink({ color: null, Icon: TwitterIcon, url: 'https://twitter.com/vca_iii' })}
-          {socialLink({ color: null, Icon: FB2Icon, url: 'https://www.facebook.com/vcaiii' })}
-          {socialLink({ color: null, Icon: IGIcon, url: 'https://www.instagram.com/vca.iii' })}
-          {socialLink({ color: null, Icon: TwitchIcon, url: 'https://www.twitch.tv/vcaiii' })}
-          {/* {socialLink({ color: '#1DB954', Icon: SpotifyIcon, url: 'https://audius.co/vcaiii' })} */}
-          {socialLink({ color: null, Icon: AudiusIcon, url: 'https://audius.co/vcaiii' })}
-          {socialLink({ color: 'red', Icon: YTIcon, url: 'https://www.youtube.com/channel/UCfkT4qmHn2JaS_K-Exf1XzQ' })}
+          {socialLink({ color: null, Icon: TwitterIcon, url: 'https://twitter.com/izzrodeo' })}
+          {socialLink({ color: null, Icon: FB2Icon, url: 'https://www.facebook.com/IZZRODEO/' })}
+          {socialLink({ color: null, Icon: IGIcon, url: 'https://www.instagram.com/izzrodeo/' })}
+          {socialLink({ color: null, Icon: TwitchIcon, url: 'https://www.twitch.tv/izuzurodeo' })}
+          {socialLink({ color: '#1DB954', Icon: SpotifyIcon, url: 'https://open.spotify.com/show/7oP3PtIhBcu0zxeEhoV1V1' })}
+          {socialLink({ color: 'red', Icon: YTIcon, url: 'https://www.youtube.com/channel/UCPUaqPMKwGeIGZujEpHXrzA' })}
         </div>
       </div>
     </Card>
@@ -49,7 +48,7 @@ const IndexPage = () => (
 
 const pic = () => (
   <StaticImage
-    src="../images/Gold-Smile.jpg"
+    src="../images/izzrodeo.png"
     width={300}
     quality={95}
     formats={["AUTO", "WEBP", "AVIF"]}

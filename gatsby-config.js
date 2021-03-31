@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Lord Vz`,
-    description: `Artist, Creator, Web Dev, Smart Ass, Gamer, Gluten Free, Solarpunk`,
-    author: `@vcaiii`,
-    image: "/images/Gold-Smile.jpg", // Path to your image you placed in the 'static' folder
+    title: `IZUZU RODEO`,
+    description: `A Variety Stream of content from the IZUZU RODEO Community`,
+    author: `@izzrodeo`,
+    image: "/images/izzrodeo.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@vca_iii",
-    url: `https://vcaiii.com`,
+    url: `https://izzrodeo.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#FFD700`,
         theme_color: `#FFD700`,
         display: `minimal-ui`,
-        icon: `src/images/v-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/izz-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

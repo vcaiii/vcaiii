@@ -19,7 +19,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            image
+            image {
+              location
+            }
             url
           }
         }
@@ -35,8 +37,8 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      title={title || defaultTitle}
+      titleTemplate={defaultTitle ? `%s (${site.siteMetadata?.author})` : null}
       meta={[
         {
           name: `description`,
@@ -44,7 +46,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title || defaultTitle,
         },
         {
           property: `og:description`,
@@ -56,7 +58,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `${site.siteMetadata.url}${site.siteMetadata.image}`
+          content: `${site.siteMetadata.url}${site.siteMetadata.image.location}`
         },
         {
           name: `twitter:card`,
@@ -89,7 +91,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

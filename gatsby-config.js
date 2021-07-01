@@ -1,11 +1,41 @@
+const intro = {
+  name: 'IZUZU RODEO',
+  image: { location: "/images/izzrodeo.png", alt: 'Monkey go brrr' },
+  main: 'A Variety Stream of content from the IZUZU RODEO Community',
+  secondary: '',
+  credentials: [
+    // { title: 'Founder & CEO', org: 'Panda Power for MTurk', url: 'https://pandapower.app' },
+    // { title: 'Founder', org: 'Izuzu Rodeo', url: 'https://izzrodeo.com' },
+  ]
+}
+
+const links = {
+  socials: [
+    { username: 'IZZRODEO', org: 'Facebook', link: 'https://www.facebook.com/'},
+    { username: 'izzrodeo', org: 'Twitter', link: 'https://twitter.com/'},
+    { username: 'izzrodeo', org: 'Instagram', link: 'https://www.instagram.com/'},
+  ],
+  shop: [
+    // { username: 'vcaiii', org: 'OpenSea', link: 'https://opensea.io/' },
+  ],
+  stream: [
+    { username: 'izuzurodeo', org: 'Twitch', link: 'https://www.twitch.tv/'},
+    { username: '5h0ddIsDxcW9yEMYltEnWK', org: 'Spotify', link: 'https://open.spotify.com/show/'},
+    // { username: 'vcaiii', org: 'Audius', link: 'https://audius.co/' },
+    { username: 'UCPUaqPMKwGeIGZujEpHXrzA', org: 'YouTube', link: 'https://www.youtube.com/channel/'},
+  ],
+}
+
 module.exports = {
   siteMetadata: {
     title: `IZUZU RODEO`,
-    description: `A Variety Stream of content from the IZUZU RODEO Community`,
+    description: `${intro.main} | ${intro?.secondary}`,
     author: `@izzrodeo`,
-    image: "/images/izzrodeo.png", // Path to your image you placed in the 'static' folder
+    image: intro.image, // Path to your image you placed in the 'static' folder
     twitterUsername: "@izzrodeo",
     url: `https://izzrodeo.com`,
+    intro,
+    links,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

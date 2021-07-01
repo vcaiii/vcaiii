@@ -9,7 +9,7 @@ main {
 
 .social-link {
   font-size: 3em;
-  margin: 10px;
+  margin: 0 10px;
   transition: all .1s ease-in-out;
 }
 
@@ -44,6 +44,16 @@ main {
 .ant-card-cover picture {
   border-radius: 8%;
 }
+
+.ant-card-body {
+  padding: 0;
+  padding-top: 15px;
+}
+
+#expand-icon {
+  color: rgba(0, 0, 0, 0.45);
+}
+
 /* Gradient */
 
 body {

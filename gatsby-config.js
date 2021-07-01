@@ -4,8 +4,7 @@ const intro = {
   main: 'A Variety Stream of content from the IZUZU RODEO Community',
   secondary: '',
   credentials: [
-    // { title: 'Founder & CEO', org: 'Panda Power for MTurk', url: 'https://pandapower.app' },
-    // { title: 'Founder', org: 'Izuzu Rodeo', url: 'https://izzrodeo.com' },
+    { title: '', org: '', url: '' },
   ]
 }
 
@@ -16,12 +15,11 @@ const links = {
     { username: 'izzrodeo', org: 'Instagram', link: 'https://www.instagram.com/'},
   ],
   shop: [
-    // { username: 'vcaiii', org: 'OpenSea', link: 'https://opensea.io/' },
+    { username: '', org: '', link: '' },
   ],
   stream: [
     { username: 'izuzurodeo', org: 'Twitch', link: 'https://www.twitch.tv/'},
     { username: '5h0ddIsDxcW9yEMYltEnWK', org: 'Spotify', link: 'https://open.spotify.com/show/'},
-    // { username: 'vcaiii', org: 'Audius', link: 'https://audius.co/' },
     { username: 'UCPUaqPMKwGeIGZujEpHXrzA', org: 'YouTube', link: 'https://www.youtube.com/channel/'},
   ],
 }
@@ -29,7 +27,7 @@ const links = {
 module.exports = {
   siteMetadata: {
     title: `IZUZU RODEO`,
-    description: `${intro.main} | ${intro?.secondary}`,
+    description: `${intro.main} | ${intro.secondary}`,
     author: `@izzrodeo`,
     image: intro.image, // Path to your image you placed in the 'static' folder
     twitterUsername: "@izzrodeo",

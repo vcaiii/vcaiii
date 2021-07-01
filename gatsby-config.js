@@ -1,6 +1,6 @@
 const intro = {
   name: 'IZUZU RODEO',
-  image: { location: "/images/izzrodeo.png", alt: 'Monkey go brrr' },
+  image: { location: "/images/profile-image.png", alt: 'Monkey go brrr' },
   main: 'A Variety Stream of content from the IZUZU RODEO Community',
   secondary: '',
   credentials: [
@@ -56,7 +56,7 @@ module.exports = {
         background_color: `#FFD700`,
         theme_color: `#FFD700`,
         display: `minimal-ui`,
-        icon: `src/images/izz-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

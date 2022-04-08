@@ -66,7 +66,7 @@ const Profile = () => {
             }
           }
         },
-        profileImage: file(relativePath: { regex: "/profile-image.(jpg)|(png)/" }) {
+        profileImage: file(relativePath: { regex: "/profile-image.(jpg|png)/" }) {
           childImageSharp {
             gatsbyImageData
           }

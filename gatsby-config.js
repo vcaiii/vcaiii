@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const intro = {
   name: 'IZUZU RODEO',
   image: { location: "/images/profile-image.png", alt: 'Monkey go brrr' },
@@ -38,6 +42,22 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          process.env.GA4 // GA4
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 30,
+        },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
